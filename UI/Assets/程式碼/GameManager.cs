@@ -9,6 +9,9 @@ public class GameManager: MonoBehaviour {
     {
         mixer.SetFloat("VBGM", value);
     }
-}
+
+    public void setVSFX(float value)
+        mixer.setFloat("VSFX",value);
+    }
 
 
