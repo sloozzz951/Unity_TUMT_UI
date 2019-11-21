@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
 
     public void Play()
     {
-        //SceneManager.LoadScene("場景");
+        SceneManager.LoadScene("場景");
         StartCoroutine(Loading());
     }
     private IEnumerator Loading()
@@ -32,13 +32,13 @@ public class GameManager : MonoBehaviour
         //print("測試 1");
         //yield return new WaitForSeconds(1);
         //print("測試 2");
+    
+    AsyncOperation ao = SceneManager.LoadSceneAsync("場景");
+    ao.allowSceneActivation = false;
 
-        AsyncOperation ao = SceneManager.LoadSceneAsync("場景");
-        ao.allowSceneActivation = false;
-
-        while (ao.isDone == false)
-
-        loadingText.text = ((ao.progress/0.9f) * 100).ToString();
+    while (ao.isDone == false)
+    {
+        loadingText.text = ((ao.progress / 0.9f) * 100).ToString();
         loading.value = ao.progress / 0.9f;
         yield return new WaitForSeconds(0.0001f);
         
@@ -46,7 +46,8 @@ public class GameManager : MonoBehaviour
         {
             ao.allowSceneActivation = true;
         }
-    }
+     }
+  }
 }
 
 
