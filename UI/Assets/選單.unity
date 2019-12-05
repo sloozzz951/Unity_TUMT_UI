@@ -1095,7 +1095,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -500.4, y: -0.0000076293945}
+  m_AnchoredPosition: {x: -491, y: 0.0000062028}
   m_SizeDelta: {x: 179.2, y: 61}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &342978241
@@ -1130,9 +1130,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'SOUND VOLUMN
-
-'
+  m_Text: Picture quality
 --- !u!222 &342978242
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3093,7 +3091,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'SOUND VOLUMN
+  m_Text: 'volume
 
 '
 --- !u!222 &1155401685
@@ -3486,7 +3484,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'SOUND VOLUMN
+  m_Text: 'Screen size
 
 '
 --- !u!222 &1242311440
@@ -4861,7 +4859,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -500.4, y: -0.0000076293945}
+  m_AnchoredPosition: {x: -491, y: -0.0000076293945}
   m_SizeDelta: {x: 179.2, y: 61}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2009738064
@@ -4896,7 +4894,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'SOUND VOLUMN
+  m_Text: 'Mouse sensitive
 
 '
 --- !u!222 &2009738065
