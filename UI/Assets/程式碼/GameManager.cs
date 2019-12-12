@@ -6,10 +6,8 @@ using System.Collections;
 
 public class GameManager : MonoBehaviour
 {
-
     public AudioMixer 音樂管理器;
-
-    public Text loadingText;    
+    public Text loadingText;
     public Slider loading;
 
     public void SetVBGM(float value)
@@ -32,22 +30,20 @@ public class GameManager : MonoBehaviour
         //print("測試 1");
         //yield return new WaitForSeconds(1);
         //print("測試 2");
-    
-    AsyncOperation ao = SceneManager.LoadSceneAsync("場景");
-    ao.allowSceneActivation = false;
 
-    while (ao.isDone == false)
-    {
-        loadingText.text = ((ao.progress / 0.9f) * 100).ToString();
-        loading.value = ao.progress / 0.9f;
-        yield return new WaitForSeconds(0.0001f);
-        
-        if(ao.progress == 0.9f && Input.anyKey)
+        AsyncOperation ao = SceneManager.LoadSceneAsync("場景");
+        ao.allowSceneActivation = false;
+
+        while (ao.isDone == false)
         {
-            ao.allowSceneActivation = true;
+            loadingText.text = ((ao.progress / 0.9f) * 100).ToString();
+            loading.value = ao.progress / 0.9f;
+            yield return new WaitForSeconds(0.0001f);
+
+            if (ao.progress == 0.9f && Input.anyKey)
+            {
+                ao.allowSceneActivation = true;
+            }
         }
-     }
-  }
+    }
 }
-
-
